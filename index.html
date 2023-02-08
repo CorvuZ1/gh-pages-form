@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="scripts/script.js"></script>
+    <title>Task</title>
+  </head>
+  <body>
+    <form action="#" method="POST" class="form">
+      <div class="form__inner">
+        <div class="form__logo">
+          <img src="imgs/logo.svg" alt="Логотип" />
+        </div>
+        <fieldset class="form__group">
+          <legend class="form__title">Изменение пароля</legend>
+          <div class="form__data">
+            <div class="form__field form__field--required">
+              <input placeholder="Email / Логин" name="login" type="text" class="form__input" />
+              <div class="form__error"></div>
+            </div>
+            <div class="form__field form__field--required">
+              <input placeholder="Контрольная строка" name="control_string" type="text" class="form__input" />
+              <div class="form__error"></div>
+            </div>
+            <div class="form__field form__field--required">
+              <input placeholder="Новый пароль" name="password" type="password" class="form__input form__input--password" />
+              <button type="button" class="form__show-password">
+                <img src="imgs/eye.svg" alt="" />
+              </button>
+              <div class="form__error"></div>
+            </div>
+            <div class="form__field form__field--required">
+              <input placeholder="Подтверждение пароля" name="password_confirm" type="password" class="form__input" />
+              <div class="form__error"></div>
+            </div>
+          </div>
+        </fieldset>
+        <div class="form__notice">Обязательные поля</div>
+        <div class="form__bottom">
+          <button type="submit" class="form__button">Изменить пароль <img src="imgs/arrow.svg" class="form__button-arrow"> </button>
+          <div class="form__links">
+            <a href="#" class="form__link">Зарегистрироваться</a>
+            <a href="#" class="form__link">Войти</a>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
